@@ -1,0 +1,23 @@
+From b085085fa9dfb2f7c552ec67b1506ad65c305218 Mon Sep 17 00:00:00 2001
+From: Jon West <electrikjesus@gmail.com>
+Date: Fri, 24 Jul 2020 17:26:07 -0400
+Subject: [PATCH] Add Surface IPTS defconfigs
+
+
+diff --git a/arch/x86/configs/android-x86_64_defconfig b/arch/x86/configs/android-x86_64_defconfig
+index 1d792eb3d7a1..1b94a783199c 100644
+--- a/arch/x86/configs/android-x86_64_defconfig
++++ b/arch/x86/configs/android-x86_64_defconfig
+@@ -7957,3 +7957,9 @@ CONFIG_X86_DEBUG_FPU=y
+ # CONFIG_UNWINDER_ORC is not set
+ CONFIG_UNWINDER_FRAME_POINTER=y
+ # CONFIG_UNWINDER_GUESS is not set
++
++#
++# Intel IPTS Touchscreen
++#
++CONFIG_INTEL_IPTS=m
++CONFIG_INTEL_IPTS_SURFACE=m
+-- 
+2.17.1
+

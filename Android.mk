@@ -13,5 +13,5 @@ ifeq ($(IPTS_DRIVERS),true)
 	TARGET_EXTRA_KERNEL_MODULES += $(patsubst $(LOCAL_PATH)/%/Android.mk,%,$(wildcard $(LOCAL_PATH)/*/Android.mk))
 
 	include $(call all-subdir-makefiles)
-
+	
 endif
